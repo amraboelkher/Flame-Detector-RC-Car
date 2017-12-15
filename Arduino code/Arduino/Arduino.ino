@@ -65,15 +65,8 @@ void setup(){
     pinMode(motorBPin2, OUTPUT);
     
 
-    //move_NE();
-    //move_SE();
-    //move_NW();
 
-    //move_SW();
-    //move_S();
-    //move_N();
     stop();
-    //Serial.write(2);
   
 }
 
@@ -82,9 +75,7 @@ String s;
 char a;
 void loop(){
   if(Serial.available()){
-      //s = Serial.readString();
-      //s.trim();
-      //Serial.println(s);
+
       a = Serial.read();
       Serial.println(a);
       if(a == '3')
